@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <base href="/">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Workshop MEAN</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+	<script src="node_modules/es6-shim/es6-shim.min.js"></script> 
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    
+    <script>
+       System.config({ 
+           packages: {        
+	           app: {
+	               format: 'register',
+	               defaultExtension: 'js'
+	           }
+            }
+        });
+        System.import('app/boot.js')
+                .then(null, console.error.bind(console));
+	</script>
+</head>
+<body>
+	<app>Carregando...</app>	
+</body>
+</html>

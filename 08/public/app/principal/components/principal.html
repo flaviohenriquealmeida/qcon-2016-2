@@ -1,0 +1,19 @@
+<div class="jumbotron text-center">
+    <h1>Workshop MEAN</h1>
+</div>
+<div class="container">
+	<a [routerLink]="['Nova']" class="btn btn-primary">Novo Palestrante</a>
+	<br>
+	<br>
+	<table class="table table-bordered table-striped">
+	    <tr *ngFor="#palestrante of palestrantes">
+	        <td>{{palestrante.nome}}</td>
+	        <td>{{palestrante.palestra}}</td>
+            <td>
+                <button (click)="remove(palestrante)" class="btn btn-danger">
+                    Remover
+                </button>
+            </td>
+	    </tr>
+	</table>
+</div>

@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "boot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc:w": "tsc -w",
+    "start": "npm run tsc:w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.7",
+    "es6-promise": "^3.1.2",
+    "es6-shim": "^0.33.13",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "systemjs": "^0.19.6",
+    "zone.js": "^0.5.15"
+  }
+}
