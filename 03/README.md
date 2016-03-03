@@ -114,7 +114,7 @@ import {Principal} from './principal/components/principal';
 import {HTTP_PROVIDERS} from 'angular2/http';
 
 bootstrap(Principal, [HTTP_PROVIDERS]); 
-``
+```
 
 Excelente, assim que nosso componente `Principal` foi iniciado, Angular se encarregará de injetar em seu construtor o serviço `Http` para nós.
 
