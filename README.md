@@ -3,7 +3,14 @@
 * MongoDB
 * Node.js
 * Conexão Internet
-* Editor de texto de preferência
+* Visual Studio Code
+
+# Node.js
+Você pode baixar o Node.js diretamente do seu site `https://nodejs.org`. **ATENÇÃO**: baixe a versão 4.X LTS!
+
+# Visual Studio Code
+
+Você pode baixar a versão gratuita do Visual Studio Code para sua plataforma em `https://code.visualstudio.com/Download`.
 
 # Instalação do MongoDB na plataforma Windows
 
@@ -22,7 +29,7 @@ https://nodejs.org/dist/v4.2.3/node-v4.2.3-x86.msi
 
 https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi
 
-**ATENÇÃO: Não troque a pasta padrão do Node.js durante a instalação, a não ser que você saiba exatamente o que está fazendo**.
+**ATENÇÃO: não troque a pasta padrão do Node.js durante a instalação, a não ser que você saiba exatamente o que está fazendo**.
 
 ### Testando a instalação
 
