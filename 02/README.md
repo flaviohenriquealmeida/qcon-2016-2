@@ -43,7 +43,7 @@ import {Component} from 'angular2/core';
 export class Principal {}
 ```
 
-Criar um componente em Angular começa sempre a partir da definição de uma classe como decorato `@Component` que a caracteriza como um componente. Duas configurações são importantes.
+Criar um componente em Angular começa sempre a partir da definição de uma classe com o decorator `@Component` que a caracteriza como um componente. Duas configurações são importantes.
 
 **selector**: indica como referenciaremos nosso componente em templates
 **templateUrl**: indica o arquivo .html com a marcação que será utilizada para renderizar o componente.
@@ -63,7 +63,7 @@ Vamos criar o template do nosso componente em `public/app/principal/components/p
 
 ## PASSO 3
 
-Veja que nosso template tem uma lacuna criada através e uma **Angular Expression (AE)**. Este é um tipo de associação de dados (data binding) unidirecional que vai da fonte de dados para a view e nunca ao contrário. No entanto, onde nosso template encontará os dados de que precisa? No seu contexto, isto é, o componente `Principal`. Vamos adiciona a propriedade `palestrantes` em nossa classe que contém uma lista de palestrantes:
+Veja que nosso template tem uma lacuna criada através e uma **Angular Expression (AE)**. Este é um tipo de associação de dados (data binding) unidirecional que vai da fonte de dados para a view e nunca ao contrário. No entanto, onde nosso template encontrará os dados de que precisa? No seu contexto, isto é, o componente `Principal`. Vamos adiciona a propriedade `palestrantes` em nossa classe que contém uma lista de palestrantes:
 
 ```
 // public/app/principal/components/principal.ts
@@ -122,7 +122,7 @@ import {Principal} from './app/principal/components/principal';
 bootstrap(Principal);
 ```
 
-Veja que importamos `bootstrap`, o responsável em carregar o primeiro componente da nossa aplicação. Quando `Principal` for carregado, `bootstrap` procurará seu selector em `index.html` para rendeizar nosso componentes naquela posição.
+Veja que importamos `bootstrap`, o responsável em carregar o primeiro componente da nossa aplicação. Quando `Principal` for carregado, `bootstrap` procurará seu selector em `index.html` para renderizar nosso componentes naquela posição.
 
 Mas quem carregará `boot.js`? A biblioteca `System.js`, é por isso em em `index.html` já uma TAG script que solicita a biblioteca que carregue `boot.js`.
 

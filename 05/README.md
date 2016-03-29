@@ -2,7 +2,7 @@
 
 Precisamos preparar o terreno para integrar nosso servidor com o MongoDB. Nosso primeiro passo será adicionar alguns palestrantes através do mongo shell. 
 
-Com o MongoDB devidamente instalado, dentro do terminal do seu sistema operacional favorito, cheme o Mongo Shell:
+Com o MongoDB devidamente instalado, dentro do terminal do seu sistema operacional favorito, chame o Mongo Shell:
 
 ```
 mongo
@@ -114,7 +114,7 @@ Faça um teste, parando seu servidor iniciando-o logo em seguida. A string `Mong
 
 ## PASSO 4
 
-Apesar do MongoDB ser Schemaless, isso não quer dizer que esquemas não sejam importantes, a grande questão é que eles são responsabilidades da aplicação. Criaremos nosso primeiro esquema que representa um palestrante com auxílo do Mongoose:
+Apesar do MongoDB ser Schemaless, isso não quer dizer que esquemas não sejam importantes, a grande questão é que eles são responsabilidades da aplicação. Criaremos nosso primeiro esquema que representa um palestrante com auxílio do Mongoose:
 
 **Crie** o arquivo **app/models/palestrante.js**.
 

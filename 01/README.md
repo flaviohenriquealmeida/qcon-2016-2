@@ -1,3 +1,4 @@
+
 **IMPORTANTE**: em seu terminal de preferência, dentro deste diretório, baixe todas as dependências do projeto através do comando `npm install` antes de continuar.
 
 # EXERCÍCIO - 1
@@ -5,7 +6,7 @@
 Nosso projeto possui a seguinte estrutura:
 
 ```
-server.js -> incializa nosso servidor que recebe uma instância do Express
+server.js -> inicializa nosso servidor que recebe uma instância do Express
 config
     express.js -> centraliza as configurações do Express
 public
@@ -23,7 +24,7 @@ Inicie seu servidor, para isso, dentro da pasta 01, utilize o comando:
 npm start
 ```
 
-Nosso servidor incializa, mas a instância do Express passada para nosso servidor ainda não foi devidamente configurada. Por exemplo, ainda não somos capazes de acessar o arquivo `index.html` dentro da pasta `public`, algo fundamental para o cliente em Angular que faremos. 
+Nosso servidor inicializa, mas a instância do Express passada para nosso servidor ainda não foi devidamente configurada. Por exemplo, ainda não somos capazes de acessar o arquivo `index.html` dentro da pasta `public`, algo fundamental para o cliente em Angular que faremos. 
 
 Para que possamos compartilhar arquivos estáticos, precisamos adicionar e configurar um middleware na configuração do Express.
 
@@ -72,8 +73,8 @@ app.use(express.static('public'));
 
 // configura o consign
 consign({cwd: 'app'})
-	.include('api')
-	.into(app);
+    .include('api')
+    .into(app);
 
 module.exports = app;
 
@@ -127,7 +128,7 @@ module.exports = function(app) {
         });
 };
 ```
- O objeto `app.route` possui uma função para cada verbo HTTP, em nosso caso, estamos interessados em lidar para requisições do tipo `GET` quando a URL `/eventos` for acessada, por isso usamos uma função de mesmo nome. Esta função recebe como parâmetro um callback que será executado quando a requisição for executada, retornando como resposta um JSON com os dados dos eventos. O próprio objeto que presenta o fluxo de resposta já possui o a função `json` que sabe lidar com essa estrutura de dados.
+ O objeto `app.route` possui uma função para cada verbo HTTP, em nosso caso, estamos interessados em lidar para requisições do tipo `GET` quando a URL `/eventos` for acessada, por isso usamos uma função de mesmo nome. Esta função recebe como parâmetro um callback que será executado quando a requisição for executada, retornando como resposta um JSON com os dados dos eventos. O próprio objeto que apresenta o fluxo de resposta já possui o a função `json` que sabe lidar com essa estrutura de dados.
 
 ## PASSO 8
 

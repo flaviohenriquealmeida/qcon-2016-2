@@ -1,7 +1,7 @@
 
 # EXERCÍCIO 4
 
-Hoje conseguimos buscar nossa lista de palestrantes através da nossa API, no entanto ainda não somos capazes de incluir novos participantes. Vamos preparar o terro para que possamos criar nosso cadastro.
+Hoje conseguimos buscar nossa lista de palestrantes através da nossa API, no entanto ainda não somos capazes de incluir novos participantes. Vamos preparar o terreno para que possamos criar nosso cadastro.
 
 ## PASSO 1
 
@@ -44,7 +44,7 @@ Temos um problema. Hoje, `index.html` exibe nosso componente `Principal` assim q
 
 ## PASSO 3
 
-Para podemos usar o sistema de routas do Angular, precisamos carregar seu módulo específico, que não faz parte do core do Angular:
+Para podemos usar o sistema de rotas do Angular, precisamos carregar seu módulo específico, que não faz parte do core do Angular:
 
 
 ```
@@ -185,7 +185,7 @@ Precisamos ainda realizar mais alguma alterações em `public/index.html`. Vamos
 <!-- alterando o componente -->
 
 <body>
-	<app>Carregando...</app>	
+    <app>Carregando...</app>    
 </body>
 ```
 
@@ -203,18 +203,18 @@ Precisamos alterar `app/config/express.js` e retornar `index.html`, mas somente 
 
 var express = require('express');
 var app = express()
-	,consign = require('consign')
+    ,consign = require('consign')
     ,path = require('path'); // importou path
 
 app.use(express.static('public'));
 
 consign({cwd: 'app'})
-	.include('api')
-	.into(app);
+    .include('api')
+    .into(app);
 
 // novidade!
 app.all('/*', function(req, res) {
-	res.sendFile(path.resolve('public/index.html'));
+    res.sendFile(path.resolve('public/index.html'));
 });
 
 module.exports = app;
@@ -230,7 +230,7 @@ Por fim, vamos adicionar um linck com visual de botão com ajuda do bootstrap qu
 
 Não podemos nos esquecer de importar as diretivas de router, porque apenas as diretivas do core do Angular são carregadas automaticamente:
 ```
-// public/app/principal/components/principa.ts
+// public/app/principal/components/principal.ts
 
 import {Component} from 'angular2/core';
 import {Http} from 'angular2/http';

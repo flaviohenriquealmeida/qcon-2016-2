@@ -12,33 +12,17 @@ conseguido instalá-lo, siga os passos a seguir. Eles foram testados no Windows 
 
 ### Baixando a versão correta
 
-Na página `https://www.mongodb.org/downloads` baixe a versão compatível com seus sistema operacional (32bits ou 64bits), mas a versão `zip`. 
+Na página `https://www.mongodb.org/downloads` você pode baixar um instalador específico para sua plataforma 32 bits ou 64 bits:
 
-### Renomeie a pasta
+**VERSÃO 32 BITS**
 
-Descompacte o arquivo para a raiz do seu sistema operacional, normalmente `c:\`. No final, renomeie a pasta para `c:\mongodb`.
+https://nodejs.org/dist/v4.2.3/node-v4.2.3-x86.msi
 
-### Criando o diretório que armazenará nossos bancos
+**VERSÃO 64 BITS**
 
-Em seguida, crie o diretório `c:\data\db`, também na raiz do sistema de arquivos. É dentro desta pasta que ficarão armazenados os banco de dados criados pelo MongoDB.
+https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi
 
-### Registrando o MongoDB como serviço
-
-O próximo passo será registrar o MongoDB como um serviço em seu sistema operacional, ou seja, toda vez que você reiniciar sua máquina ele será carregado automaticamente pelo Windows. 
-
-Abra o terminal **como administrador** e entre dentro da pasta`c:\mongodb\bin`. Nela, execute o seguinte comando:
-
-```
-mongod --dbpath=C:\mongodb --logpath=C:\mongodb\log.txt --install
-```
-
-Agora, ainda no terminal, execute o comando:
-
-```
-services.msc
-```
-
-Este comando abrirá o painel de serviços do Windows. Busque a linha que exibe o serviço `MongoDB` que acabamos de adicionar. Clique com o botão direito no nome do serviço e escolha a opção `iniciar`. Pronto!
+**ATENÇÃO: Não troque a pasta padrão do Node.js durante a instalação, a não ser que você saiba exatamente o que está fazendo**.
 
 ### Testando a instalação
 

@@ -63,7 +63,7 @@ module.exports = app;
 ```
 ## PASSO 3 
 
-Agora que já sabemos que `req.body` é nosso palestrante enviado pelo nosso cliente Angular, podemos usar a função `Palestrante.create` do nosso modelo do Mongoose para gravá-lo no banco. Como resposta, enviaremos para o cliente o paestrante, só que dessa vez com seu ID preenchido:
+Agora que já sabemos que `req.body` é nosso palestrante enviado pelo nosso cliente Angular, podemos usar a função `Palestrante.create` do nosso modelo do Mongoose para gravá-lo no banco. Como resposta, enviaremos para o cliente o palestrante, só que dessa vez com seu ID preenchido:
 
 ```
 // app/api/paletrantes.js
@@ -95,7 +95,7 @@ module.exports = function(app) {
 
 ## PASSO 4
 
-Vamos voltar para nosso cliente Angular. Nosso componente `Cadastro` tem que ser capaz de receber os dados do formulário. Vamos adicionar a propriedade `palestrante` que receberá essas informações e um método que ao ser chamado exibirá no console a propriedade `palestrante`. Isso nos será util inicialmente para sabermos se realmente os dados inseridos no formulário estão chegando em nossa propriedade:
+Vamos voltar para nosso cliente Angular. Nosso componente `Cadastro` tem que ser capaz de receber os dados do formulário. Vamos adicionar a propriedade `palestrante` que receberá essas informações e um método que ao ser chamado exibirá no console a propriedade `palestrante`. Isso nos será útil inicialmente para sabermos se realmente os dados inseridos no formulário estão chegando em nossa propriedade:
 
 ```
 // public/app/cadastro/components/cadastro.ts
@@ -147,7 +147,7 @@ Pela natureza dinâmica de um objeto JavaScript, as propriedade `nome` e `palest
 
 ## PASSO 5
 
-Precisamos agora executar o método `grava` do nosso componente `Cadastro` quando o formulário for submetido. Neste caso, queremos fazer uma asssociação de evento, em nosso caso `submit`.
+Precisamos agora executar o método `grava` do nosso componente `Cadastro` quando o formulário for submetido. Neste caso, queremos fazer uma associação de evento, em nosso caso `submit`.
 
 Para isso, adicione o atributo `submit` no `<form>`. Ele receberá como valor uma expressão que é a chamada do método `grava`:
 

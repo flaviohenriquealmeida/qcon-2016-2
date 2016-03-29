@@ -125,7 +125,7 @@ export class Principal {
 
 ## PASSO 4
 
-Precisamos fazer com que o botão `Remover` chame o método `remove` de `Principal` passando o palestrante que desejamos resolver. Para isso, faremos uma asssociação unidirecional da view para a fonte de dados, ou seja, realizaremos um *event binding*:
+Precisamos fazer com que o botão `Remover` chame o método `remove` de `Principal` passando o palestrante que desejamos resolver. Para isso, faremos uma associação unidirecional da view para a fonte de dados, ou seja, realizaremos um *event binding*:
 
 ```
 <!-- public/app/principal/components/principal.html -->
