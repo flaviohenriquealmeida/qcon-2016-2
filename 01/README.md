@@ -1,5 +1,5 @@
 
-**IMPORTANTE**: em seu terminal de preferência, dentro deste diretório, baixe todas as dependências do projeto através do comando `npm install` antes de continuar.
+**IMPORTANTE**: em seu terminal de preferência, dentro deta pasta, baixe todas as dependências do projeto do backend através do comando `npm install` antes de continuar. Em seguida, dentro da pasta `public` execute também `npm install` para baixar as dependências do cliente (Angular2).
 
 # EXERCÍCIO - 1
 

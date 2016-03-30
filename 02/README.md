@@ -1,3 +1,5 @@
+**IMPORTANTE**: em seu terminal de preferência, dentro deta pasta, baixe todas as dependências do projeto do backend através do comando `npm install` antes de continuar. Em seguida, dentro da pasta `public` execute também `npm install` para baixar as dependências do cliente (Angular2).
+
 Temos nosso servidor Express rodando com as rotas `/palestrantes` e `/eventos` configuradas. Chegou a hora de prepararmos o terreno para nosso cliente em Angular. 
 
 ## EXERCÍCIO 2

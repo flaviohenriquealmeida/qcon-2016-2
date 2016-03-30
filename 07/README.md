@@ -1,3 +1,5 @@
+**IMPORTANTE**: em seu terminal de preferência, dentro deta pasta, baixe todas as dependências do projeto do backend através do comando `npm install` antes de continuar. Em seguida, dentro da pasta `public` execute também `npm install` para baixar as dependências do cliente (Angular2).
+
 # EXERCÍCIO 7
 
 Neste exercício, implementaremos a funcionalidade de remoção de palestrantes.
