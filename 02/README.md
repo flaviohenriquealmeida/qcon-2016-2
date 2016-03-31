@@ -112,14 +112,14 @@ Isso ainda não é suficiente. Precisamos realizar o boot da nossa aplicação. 
 
 ## PASSO 5
 
-Vamos criar o arquivo **public/boot.ts**:
+Vamos criar o arquivo **public/app/boot.ts**:
 
 ```
-// public/boot.ts
+// public/app/boot.ts
 
 ///<reference path="node_modules/angular2/typings/browser.d.ts"/>
 import {bootstrap} from 'angular2/platform/browser';
-import {Principal} from './app/principal/components/principal';
+import {Principal} from './principal/components/principal';
 
 bootstrap(Principal);
 ```
