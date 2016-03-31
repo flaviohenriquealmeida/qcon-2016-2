@@ -3,5 +3,5 @@
 .DS_Store?
 .dpl/
 **/node_modules
-**/*.js
+**/public/*.js
 **/*.map
