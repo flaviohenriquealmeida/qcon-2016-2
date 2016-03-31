@@ -251,7 +251,7 @@ export class Principal {
 Por fim, vamos adicionar o nosso link que fará usado da diretiva `RouterLink`:
 
 ```
-<!-- public/principal/components/principal.html -->
+<!-- public/app/principal/components/principal.html -->
 
 <div class="jumbotron text-center">
     <h1>Workshop MEAN</h1>
