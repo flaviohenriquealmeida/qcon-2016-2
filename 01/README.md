@@ -1,5 +1,5 @@
 
-**IMPORTANTE**: em seu terminal de preferência, dentro deta pasta, baixe todas as dependências do projeto do backend através do comando `npm install` antes de continuar. Em seguida, dentro da pasta `public` execute também `npm install` para baixar as dependências do cliente (Angular2).
+**IMPORTANTE**: em seu terminal de preferência, dentro desta pasta, baixe todas as dependências do projeto do backend através do comando `npm install` antes de continuar. Em seguida, dentro da pasta `public` execute também `npm install` para baixar as dependências do cliente (Angular2).
 
 # EXERCÍCIO - 1
 
@@ -10,9 +10,6 @@ server.js -> inicializa nosso servidor que recebe uma instância do Express
 config
     express.js -> centraliza as configurações do Express
 public
-    css
-        bootstrap.min.css
-        bootrap.theme.css
     index.html -> Página principal da aplicação
 ```
 

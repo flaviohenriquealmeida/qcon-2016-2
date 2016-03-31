@@ -16,14 +16,14 @@ export class PalestranteService {
     cadastra(palestrante) {
        
        if(palestrante._id) {
-           
-           return this.http
-            .put('/palestrantes/' + palestrante._id, palestrante);           
+
+         return this.http.put('/palestrantes/' + palestrante._id,
+           JSON.stringify(palestrante), { headers: this.headers });
+            
                        
        } else {
-           
-		return this.http.post('/palestrantes', 
-            JSON.stringify(palestrante), { headers: this.headers })
+         return this.http.post('/palestrantes', 
+           JSON.stringify(palestrante), { headers: this.headers })
        }
     }
     
