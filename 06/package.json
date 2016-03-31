@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "consign": "^0.1.2",
     "express": "^4.13.3",
     "mongoose": "^4.4.5"
