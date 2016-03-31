@@ -79,6 +79,11 @@ module.exports = app;
 
 A configuração `{cwd: 'app'}` indica a raíz na qual o `consign` procurará os demais diretórios para carregamento de módulos.
 
+Isso ainda não é suficiente, precisamos entrar dentro da pasta que contém nosso arquivo server.js e instalar o consign:
+
+```
+npm install consign --save
+```
 ## PASSO 5
 
 Agora que você configurou o expres-load, já pode subir o servidor com `npm start` e acessar a URL `http://localhost:3000/palestrantes` que 
